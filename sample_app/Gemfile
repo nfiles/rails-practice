@@ -6,6 +6,7 @@ gem 'rails', '4.1.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.14.2'
+  gem 'spring'
 end
 
 group :test do
@@ -28,6 +29,3 @@ group :production do
   gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
-
-
-gem 'spring',        group: :development
