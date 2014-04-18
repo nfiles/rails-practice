@@ -10,8 +10,4 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
-
-  def thing
-  end
 end
-#comment
