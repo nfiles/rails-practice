@@ -1,6 +1,7 @@
 *.rbc
 capybara-*.html
-.rspec
+# I prefer to normalize the test environment
+# .rspec
 /log
 /tmp
 /db/*.sqlite3
