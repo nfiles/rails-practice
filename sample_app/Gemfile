@@ -23,6 +23,8 @@ group :test do
 
   # This gem is for use in a windowing environment
   #gem 'libnotify', '0.8.2'
+
+  gem 'factory_girl_rails', '4.4.1'
 end
 
 gem 'sass-rails', '~> 4.0.3'
