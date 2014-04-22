@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// Removed 'turbolinks' entry
+// Added this one:
+//= require bootstrap
 //= require_tree .
