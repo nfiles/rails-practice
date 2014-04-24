@@ -28,5 +28,11 @@ module SampleApp
     # config.i18n.default_locale = :de
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    # Bootstrap error class for form fields
+    # src: http://stackoverflow.com/q/12252286/2548291
+    config.action_view.field_error_proc = Proc.new do |html_tag, instance|
+      "<span class=\"has-error\">#{html_tag}</span>".html_safe
+    end
   end
 end

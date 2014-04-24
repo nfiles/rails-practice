@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    signed_in_user
     @user = User.find(params[:id])
   end
 
@@ -41,10 +42,10 @@ class UsersController < ApplicationController
 
   def signed_in_user
     unless signed_in?
-      flash[:notice] = "Please sign in."
+      flash[:warning] = "Please sign in."
       redirect_to signin_url
     end
-    # Equivalent to:
+    # Almost equivalent to:
     # redirect_to signin_url, notice: "Please sign in." unless signed_in?
   end
 end
